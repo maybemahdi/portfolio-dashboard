@@ -19,7 +19,7 @@ const DashboardWrapper = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     if (!token) {
       dispatch(logout());
-      router.replace("/auth/login"); // Redirect if not authenticated
+      router.replace("/login"); // Redirect if not authenticated
     } else {
       setLoading(false); // Stop loading once authenticated
     }

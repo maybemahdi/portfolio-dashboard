@@ -30,7 +30,7 @@ const MyButton: React.FC<ButtonProps> = ({
     "rounded-[10px] text-base font-medium transition-all duration-300 cursor-pointer",
     "flex items-center justify-center gap-2",
     "disabled:opacity-70 disabled:cursor-not-allowed",
-    "px-6 py-3",
+    "px-6 py-2",
     {
       "w-full": fullWidth,
     },
@@ -43,7 +43,7 @@ const MyButton: React.FC<ButtonProps> = ({
       "hover:bg-secondary/10 active:bg-secondary/20",
       "px-[calc(24px-2px)]"
     ),
-    filled: cn("bg-secondary !text-white hover:bg-secondary"),
+    filled: cn("bg-blue-600 !text-white hover:bg-blue-700 transition duration-300"),
   };
 
   return (
